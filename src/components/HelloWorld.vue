@@ -2,15 +2,11 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <h2>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
-        </h2>
         <br />
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Report</h1>
+        <h1 class="display-2 font-weight-bold mb-3">Welcome to Report GUI</h1>
 
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
