@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app flat permanent :mini-variant.sync="mini" v-model="drawer">
+    <v-navigation-drawer app flat permanent expand-on-hover :mini-variant.sync="mini" v-model="drawer">
       <!-- Sidebar content here -->
 
       <v-list-item class="px-2">
@@ -9,7 +9,7 @@
           <!-- <v-img src="./assets/snorlax.png"></v-img> -->
         </v-list-item-avatar>
 
-        <v-list-item-title>Report GUI Admin</v-list-item-title>
+        <v-list-item-title>Administrator</v-list-item-title>
 
         <v-btn icon @click.stop="mini = !mini">
           <v-icon>mdi-chevron-left</v-icon>
@@ -33,7 +33,7 @@
     <v-app-bar app flat>
       <v-toolbar-title class="d-flex align-center">
         <router-link to="/">
-          <v-img alt="Report GUI Logo" class="shrink mr-2" contain src="" transition="scale-transition" width="200" height="65" />
+          <v-img alt="Report GUI Logo" class="shrink mr-2" contain src="./assets/report_gui_logo.png" transition="scale-transition" width="200" height="65" />
         </router-link>
       </v-toolbar-title>
 
@@ -83,10 +83,10 @@ export default {
 
   data: () => ({
     drawer: false,
-    mini: false,
+    mini: true,
     items: [
       { title: 'Home', icon: 'mdi-home-circle-outline', route: '/' },
-      { title: 'Pokemon', icon: 'mdi-pokeball', route: '/about' },
+      { title: 'About', icon: 'mdi-information-outline', route: '/about' },
       { title: 'Github Repository', icon: 'mdi-github', route: 'https://github.com/burahant/report-gui-dev' }
     ],
     search: ''
