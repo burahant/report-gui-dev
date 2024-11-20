@@ -33,7 +33,7 @@
     <v-app-bar app flat>
       <v-toolbar-title class="d-flex align-center">
         <router-link to="/">
-          <v-img alt="Report GUI Logo" class="shrink mr-2" contain src="./assets/report_gui_logo.png" transition="scale-transition" width="200" height="65" />
+          <v-img alt="Report GUI Logo" class="shrink mr-2" contain src="./assets/ration_logo.png" transition="scale-transition" width="200" height="65" />
         </router-link>
       </v-toolbar-title>
 
